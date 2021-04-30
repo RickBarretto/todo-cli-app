@@ -7,7 +7,11 @@ import argparse
 import sys
 
 def cli():
-    command = sys.argv[1]
+    try:
+        command = sys.argv[1]
+    except:
+        command = None
+        Help._help("blob/main/Docs/help.md#-------help")
 
     if command == "--help":
         Help._help("blob/main/Docs/help.md#-------help")
@@ -17,6 +21,8 @@ def cli():
         pass
     elif command == "open":
         pass
+    else:
+        print("[!] - Command not found!")
 
 
 
