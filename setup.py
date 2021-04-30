@@ -2,7 +2,7 @@ import setuptools
 setuptools.setup(
 
     name='todo',
-    version='0.0.3',
+    version='0.0.5',
 
     author='Rick Barretto',
     author_email='pdant.mailme@protonmail.ch',
