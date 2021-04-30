@@ -1,9 +1,9 @@
 from .file.file_io import *
 import os
 
-class Init:
+class Initialize:
 
-    def init():
+    def initialize():
 
         termp = Path.get_terminal_path()
         print("Todo created in:", termp)

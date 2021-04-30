@@ -1,7 +1,7 @@
 import todo_cli_app
 from .commands.file.file_io import Path
 from .commands.help import Help
-from .commands.todo import Init
+from .commands.create import Initialize
 from .commands.delete import Delete
 
 
@@ -19,8 +19,8 @@ def cli():
         command = cmd[1]
         if command == "--help":
             Help._help("blob/main/Docs/User%20Manual.md#-------user-manual")
-        elif command == "init" or ".":
-            Init.init()
+        elif command == "init" or command == ".":
+            Initialize.initialize()
         elif command == "delete":
             Delete.delete()
         elif command == "add":
@@ -31,6 +31,7 @@ def cli():
             pass
         else:
             print("[!] - Command not found!")
+            Help._help("blob/main/Docs/User%20Manual.md#-------user-manual")
 
 
 
