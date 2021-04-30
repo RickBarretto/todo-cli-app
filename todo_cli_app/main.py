@@ -8,26 +8,24 @@ import argparse
 import sys
 
 def cli():
-    try:
-        command = sys.argv[1]
-    except:
-        command = None
-        Help._help("blob/main/Docs/User%20Manual.md#-------help")
+    cmd = sys.argv
 
-    if command == "--help":
-        Help._help("blob/main/Docs/User%20Manual.md#-------help")
-    elif command == "init" or ".":
-        Init.init()
-    elif command == "add":
-        pass
-    elif command == "edit":
-        pass
-    elif command == "rm":
-        pass
-    elif command == "delete":
-        Init.delete()
-    else:
-        print("[!] - Command not found!")
+    if len(cmd) == 1:
+        command = cmd[1]
+        if command == "--help":
+            Help._help("blob/main/Docs/User%20Manual.md#-------help")
+        elif command == "init" or ".":
+            Init.init()
+        elif command == "add":
+            pass
+        elif command == "edit":
+            pass
+        elif command == "rm":
+            pass
+        elif command == "delete":
+            Init.delete()
+        else:
+            print("[!] - Command not found!")
 
 
 

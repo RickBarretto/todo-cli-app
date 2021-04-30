@@ -33,6 +33,3 @@ class _Generic:
         f = open(f"{termp}/.todo", "rb")
         f.read()
         f.close()
-
-if __name__ == "__main__":
-    Init.init("hello")
