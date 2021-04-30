@@ -11,6 +11,9 @@ def cli():
     cmd = sys.argv
 
     if len(cmd) == 1:
+        Help._help("blob/main/Docs/User%20Manual.md#-------help")
+
+    if len(cmd) == 2:
         command = cmd[1]
         if command == "--help":
             Help._help("blob/main/Docs/User%20Manual.md#-------help")
