@@ -2,7 +2,7 @@
 
 
 ## Help:
-
+[Help](Docs/help.md)
 
 ## Commands:
 
