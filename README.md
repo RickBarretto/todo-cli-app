@@ -8,7 +8,7 @@
 
 + [x] Main help command
 + [x] Init command
-+ [ ] Delete command
++ [x] Delete command
 + [ ] Read command
 + [ ] Add command
 + [ ] Mark as done command

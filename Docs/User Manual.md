@@ -15,7 +15,7 @@
     Add a task
 + `read`:
     Read the todo
-+ `close`:
++ `edit`:
     Mark a task as done
 + `rm`:
     Cancel a task     

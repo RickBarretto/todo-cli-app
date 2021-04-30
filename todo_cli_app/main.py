@@ -18,10 +18,14 @@ def cli():
         Help._help("blob/main/Docs/User%20Manual.md#-------help")
     elif command == "init" or ".":
         Init.init()
+    elif command == "add":
+        pass
+    elif command == "edit":
+        pass
+    elif command == "rm":
+        pass
     elif command == "delete":
-        pass
-    elif command == "open":
-        pass
+        Init.delete()
     else:
         print("[!] - Command not found!")
 
