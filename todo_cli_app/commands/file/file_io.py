@@ -8,8 +8,16 @@ class File:
         with open(r"{0}/{1}.{2}".format(path, name, ext), "wb") as encripted_file:
             encripted_file.write(encripted)
 
-class _Path:
-    def get_path() -> str:
+class Path:
+
+    """Gets path
+
+    functions:
+    + get_root_path() -> str
+    + get_terminal_path() -> str
+    """
+
+    def get_root_path() -> str:
         """Gets current script path
         """
         here = os.path.abspath(__file__)
