@@ -11,12 +11,12 @@ def cli():
     cmd = sys.argv
 
     if len(cmd) == 1:
-        Help._help("blob/main/Docs/User%20Manual.md#-------help")
+        Help._help("blob/main/Docs/User%20Manual.md#-------user-manual")
 
     if len(cmd) == 2:
         command = cmd[1]
         if command == "--help":
-            Help._help("blob/main/Docs/User%20Manual.md#-------help")
+            Help._help("blob/main/Docs/User%20Manual.md#-------user-manual")
         elif command == "init" or ".":
             Init.init()
         elif command == "add":
@@ -26,7 +26,7 @@ def cli():
         elif command == "rm":
             pass
         elif command == "delete":
-            Init.delete()
+            Delete.delete()
         else:
             print("[!] - Command not found!")
 

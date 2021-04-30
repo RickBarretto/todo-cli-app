@@ -2,7 +2,7 @@
 
 
 ## Help:
-[User Manual](Docs/User%20Manual.md#-------help)
+[User Manual](blob/main/Docs/User%20Manual.md#-------user-manual)
 
 ## Tasks:
 

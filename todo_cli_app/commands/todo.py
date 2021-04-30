@@ -14,6 +14,7 @@ class Init:
         else:
             _Generic.create(termp)
 
+class Delete:
     def delete():
         termp = Path.get_terminal_path()
         todo = termp + "\\.todo"
@@ -29,7 +30,6 @@ class Init:
 class _Generic:
 
     def create(termp:str):
-        name = termp.split("/")[-1]
-        f = open(f"{termp}/.todo", "rb")
-        f.read()
+        f = open(f"{termp}\\.todo", "x")
+        f.write("")
         f.close()
