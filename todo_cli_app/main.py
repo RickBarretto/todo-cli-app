@@ -10,7 +10,7 @@ def cli():
     command = sys.argv[1]
 
     if command == "--help":
-        Help._help()
+        Help._help("blob/main/Docs/help.md")
     elif command == "init":
         pass
     elif command == "delete":
