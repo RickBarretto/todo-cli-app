@@ -22,7 +22,7 @@ class Path:
         """
         here = os.path.abspath(__file__)
         here = here.split("\\")
-        root_path:list = here[:-6]
+        root_path:list = here[:-3]
         root_p:str = "/".join(root_path) + "/"
         return root_p
 
@@ -34,4 +34,4 @@ class Path:
 
 if __name__ == "__main__":
 
-    print(_Path.get_path())
+    print(Path.get_root_path())

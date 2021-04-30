@@ -7,7 +7,7 @@
     Use this command before another to see the command's help
     
 ## start a working area
-+ `init`:
++ `init`, `.`:
     Create an empty Todo on your repository
 
 ## work on the current todo
@@ -21,3 +21,5 @@
     Open your repository's todo      
 + `delete`:
     Delete your repository's todo
+
+## Options

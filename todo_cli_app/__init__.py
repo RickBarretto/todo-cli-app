@@ -1,4 +1,3 @@
-from .commands.file.crypto import *
 from .commands.file.edit import *
 from .commands.file.file_io import *
 

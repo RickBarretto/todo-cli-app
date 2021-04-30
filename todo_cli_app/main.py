@@ -1,6 +1,7 @@
 import todo_cli_app
 from .commands.file.file_io import Path
 from .commands.help import Help
+from .commands.todo import *
 
 
 import argparse
@@ -15,8 +16,8 @@ def cli():
 
     if command == "--help":
         Help._help("blob/main/Docs/help.md#-------help")
-    elif command == "init":
-        pass
+    elif command == "init" or ".":
+        Init.init()
     elif command == "delete":
         pass
     elif command == "open":
