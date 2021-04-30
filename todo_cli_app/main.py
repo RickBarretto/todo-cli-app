@@ -12,10 +12,10 @@ def cli():
         command = sys.argv[1]
     except:
         command = None
-        Help._help("blob/main/Docs/help.md#-------help")
+        Help._help("blob/main/Docs/User%20Manual.md#-------help")
 
     if command == "--help":
-        Help._help("blob/main/Docs/help.md#-------help")
+        Help._help("blob/main/Docs/User%20Manual.md#-------help")
     elif command == "init" or ".":
         Init.init()
     elif command == "delete":

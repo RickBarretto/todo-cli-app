@@ -1,4 +1,4 @@
-# [ ! ]  -  Help
+# [ ! ]  -  User Manual
 
 > These are common TodoCLI commands used in various situations:
 
@@ -8,17 +8,17 @@
     
 ## start a working area
 + `init`, `.`:
-    Create an empty Todo on your repository
+    Create an empty Todo on your repository or open an existent file.
 
 ## work on the current todo
 + `add`:
     Add a task
++ `read`:
+    Read the todo
 + `close`:
     Mark a task as done
 + `rm`:
-    Cancel a task
-+ `open`:
-    Open your repository's todo      
+    Cancel a task     
 + `delete`:
     Delete your repository's todo
 

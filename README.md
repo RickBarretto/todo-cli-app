@@ -2,6 +2,15 @@
 
 
 ## Help:
-[Help](Docs/help.md#-------help)
+[User Manual](Docs/User%20Manual.md#-------help)
 
-## Commands:
+## Tasks:
+
++ [x] Main help command
++ [x] Init command
++ [ ] Delete command
++ [ ] Read command
++ [ ] Add command
++ [ ] Mark as done command
++ [ ] Remove task command
+
