@@ -3,6 +3,7 @@ from .commands.file.file_io import Path
 from .commands.help import Help
 from .commands.create import Initialize
 from .commands.delete import Delete
+from .commands.read import Read
 
 
 import argparse
@@ -19,19 +20,26 @@ def cli():
         command = cmd[1]
         if command == "--help":
             Help._help("blob/main/Docs/User%20Manual.md#-------user-manual")
-        elif command == "init" or command == ".":
+        elif command == "init" or ".":
             Initialize.initialize()
         elif command == "delete":
             Delete.delete()
+        elif command == "read":
+            Read.read()
         elif command == "add":
-            pass
+            Help._help("blob/main/Docs/User%20Manual.md")
         elif command == "edit":
-            pass
+            Help._help("blob/main/Docs/User%20Manual.md")
         elif command == "rm":
-            pass
+            Help._help("blob/main/Docs/User%20Manual.md")
         else:
             print("[!] - Command not found!")
             Help._help("blob/main/Docs/User%20Manual.md#-------user-manual")
+
+    if len(cmd) == 3:
+        command = cmd[1]
+        option = cmd[2]
+
 
 
 

@@ -1,2 +1,2 @@
-from .file_io import *
 from .edit import *
+from .file_io import *
