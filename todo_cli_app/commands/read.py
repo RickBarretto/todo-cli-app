@@ -7,13 +7,13 @@ class Read:
         todo = termp + "\\.todo"
         check = os.path.isfile(termp + "\\.todo")
         if check == True:
-            _Print.sort(todo)
-            _Print.read(todo)
+            Print.sort(todo)
+            Print.read(todo)
         else:
             print("[!] - File not found!\nTry: 'todo .' or 'todo init'")
 
 
-class _Print:
+class Print:
 
     def read(todo:str):
         pass
@@ -22,8 +22,10 @@ class _Print:
         lines = []
         todo_content = open(todo, "rb")
         todo_content.truncate(0)
+        status = ["x", "-"]
         priorities = ["@today", "@critical", "@high", "@normal", "@low"]
-        for priority in priorities:
-            for line in todo_content:
-                if line.split(" ")[1] == priority:
-                    print(line, file=todo) 
+        for s in status:
+            for priority in priorities:
+                for line in todo_content:
+                    if line.split(" ")[1] == priority:
+                        print(line, file=todo) 

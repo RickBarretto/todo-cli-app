@@ -36,10 +36,6 @@ def cli():
             print("[!] - Command not found!")
             Help._help("blob/main/Docs/User%20Manual.md#-------user-manual")
 
-    if len(cmd) == 3:
-        command = cmd[1]
-        option = cmd[2]
-
 
 
 
