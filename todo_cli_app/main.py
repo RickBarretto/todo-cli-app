@@ -10,6 +10,7 @@ import argparse
 import sys
 
 def cli():
+    
     cmd = sys.argv
     print(cmd)
 
@@ -17,20 +18,19 @@ def cli():
         Help._help("blob/main/Docs/User%20Manual.md#-------user-manual")
 
     if len(cmd) == 2:
-        command = cmd[1]
-        if command == "--help":
+        if cmd[1] == "--help":
             Help._help("blob/main/Docs/User%20Manual.md#-------user-manual")
-        elif command == "init" or ".":
+        elif cmd[1] == "init" or ".":
             Initialize.initialize()
-        elif command == "delete":
+        elif cmd[1] == "delete":
             Delete.delete()
-        elif command == "read":
+        elif cmd[1] == "read":
             Read.read()
-        elif command == "add":
+        elif cmd[1] == "add":
             Help._help("blob/main/Docs/User%20Manual.md")
-        elif command == "edit":
+        elif cmd[1] == "edit":
             Help._help("blob/main/Docs/User%20Manual.md")
-        elif command == "rm":
+        elif cmd[1] == "rm":
             Help._help("blob/main/Docs/User%20Manual.md")
         else:
             print("[!] - Command not found!")

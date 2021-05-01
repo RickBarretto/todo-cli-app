@@ -3,6 +3,7 @@ from .file.file_io import Path
 class Read:
 
     def read():
+        print("read")
         termp = Path.get_terminal_path()
         todo = termp + "\\.todo"
         check = os.path.isfile(termp + "\\.todo")

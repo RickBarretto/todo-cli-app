@@ -1,10 +1,11 @@
 from .file.file_io import *
 import os
+import sys
 
 class Initialize:
 
     def initialize():
-
+        print("init")
         termp = Path.get_terminal_path()
         print("Todo created in:", termp)
 
